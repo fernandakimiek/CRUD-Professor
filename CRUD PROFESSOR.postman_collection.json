@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "bc61ef7f-d783-432c-bc5e-651c32f040fb",
+		"name": "CRUD PROFESSOR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cadastro Professor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": null,\r\n    \"nome\": \"João Teste\",\r\n    \"cpf\": \"12314214502\",\r\n    \"dataNascimento\": \"1989-05-04\",\r\n    \"genero\": \"M\",\r\n    \"email\": \"teste@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/professor/cadastro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"professor",
+						"cadastro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualização Professor",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"nome\": \"Maria Teste252\",\r\n    \"cpf\": \"12314214502\",\r\n    \"dataNascimento\": \"1989-04-04\",\r\n    \"genero\": \"F\",\r\n    \"email\": \"fernandakimiek@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/professor/atualizacao/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"professor",
+						"atualizacao",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Professor",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/professor/exclusao/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"professor",
+						"exclusao",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listagem professores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
